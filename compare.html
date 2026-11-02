@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare - CampusBites</title>
+    <meta name="description" content="Find menus, prices, timings and reviews of every food stall on campus.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍴 CampusBites</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="stalls.html">All Stalls</a>
+            <a href="compare.html" class="active">Compare</a>
+            <a href="review.html">Reviews</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Compare Prices &amp; Reviews</h1>
+
+        <p class="page-title">The same item is sold at more than one stall. Compare price and rating before you buy.</p>
+
+        <form class="compare-form">
+            <label for="item-select">Choose an item to compare:</label>
+            <select id="item-select" onchange="showItem()">
+                <option value="all">All items</option>
+                <option value="item-masala-chai">Masala Chai</option>
+                <option value="item-filter-coffee">Filter Coffee</option>
+                <option value="item-maggi">Maggi</option>
+                <option value="item-veg-sandwich">Veg Sandwich</option>
+                <option value="item-cold-coffee">Cold Coffee</option>
+                <option value="item-french-fries">French Fries</option>
+                <option value="item-samosa">Samosa</option>
+            </select>
+        </form>
+
+        <section class="compare-item" id="item-masala-chai">
+            <table>
+                <caption>Masala Chai</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Chai Point Corner</td><td>₹10 (Cheapest)</td><td>4.5</td><td>Strong and tasty.</td></tr>
+                    <tr><td>Annapurna South Indian</td><td>₹12</td><td>4.0</td><td>Good, slightly sweet.</td></tr>
+                    <tr><td>Night Canteen</td><td>₹15</td><td>4.2</td><td>Best at midnight.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-filter-coffee">
+            <table>
+                <caption>Filter Coffee</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Chai Point Corner</td><td>₹20 (Cheapest)</td><td>4.0</td><td>Quick and hot.</td></tr>
+                    <tr><td>Annapurna South Indian</td><td>₹25</td><td>4.7</td><td>Real South Indian taste.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-maggi">
+            <table>
+                <caption>Maggi</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Night Canteen</td><td>₹35 (Cheapest)</td><td>4.4</td><td>Cheapest and very good.</td></tr>
+                    <tr><td>Chai Point Corner</td><td>₹40</td><td>4.1</td><td>Classic Maggi.</td></tr>
+                    <tr><td>Dragon Wok</td><td>₹50</td><td>3.9</td><td>Spicy version, bit costly.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-veg-sandwich">
+            <table>
+                <caption>Veg Sandwich</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Night Canteen</td><td>₹35 (Cheapest)</td><td>3.8</td><td>Okay for the price.</td></tr>
+                    <tr><td>Chai Point Corner</td><td>₹40</td><td>4.0</td><td>Simple and fresh.</td></tr>
+                    <tr><td>Fresh Squeeze</td><td>₹45</td><td>4.3</td><td>Grilled and filling.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-cold-coffee">
+            <table>
+                <caption>Cold Coffee</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Sweet Tooth Bakery</td><td>₹50 (Cheapest)</td><td>4.2</td><td>Good with a brownie.</td></tr>
+                    <tr><td>Pizza Point</td><td>₹55</td><td>4.0</td><td>Thick and creamy.</td></tr>
+                    <tr><td>Fresh Squeeze</td><td>₹60</td><td>4.4</td><td>Best cold coffee here.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-french-fries">
+            <table>
+                <caption>French Fries</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Burger Hub</td><td>₹50 (Cheapest)</td><td>4.3</td><td>Cheaper and tasty.</td></tr>
+                    <tr><td>Pizza Point</td><td>₹60</td><td>4.1</td><td>Crispy, good portion.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compare-item" id="item-samosa">
+            <table>
+                <caption>Samosa</caption>
+                <thead>
+                    <tr><th>Stall</th><th>Price</th><th>Rating</th><th>Student Review</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="cheapest"><td>Chai Point Corner</td><td>₹15 (Cheapest)</td><td>4.5</td><td>Always hot.</td></tr>
+                    <tr><td>Night Canteen</td><td>₹20</td><td>4.0</td><td>Good late-night snack.</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusBites | Campus Food Directory &amp; Review Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - CampusBites</title>
+    <meta name="description" content="Find menus, prices, timings and reviews of every food stall on campus.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍴 CampusBites</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="stalls.html">All Stalls</a>
+            <a href="compare.html">Compare</a>
+            <a href="review.html" class="active">Reviews</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Rate a Stall</h1>
+
+        <p class="page-title">Tell other students what you thought of the food.</p>
+
+        <form>
+            <fieldset>
+                <legend>Your details</legend>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@college.edu">
+            </fieldset>
+
+            <fieldset>
+                <legend>Your review</legend>
+
+                <label for="stall">Stall</label>
+                <select id="stall" name="stall" required>
+                    <option value="">-- Select a stall --</option>
+                    <option>Chai Point Corner</option>
+                    <option>Night Canteen</option>
+                    <option>Annapurna South Indian</option>
+                    <option>Punjabi Dhaba</option>
+                    <option>Dragon Wok</option>
+                    <option>Pizza Point</option>
+                    <option>Burger Hub</option>
+                    <option>Fresh Squeeze</option>
+                    <option>Sweet Tooth Bakery</option>
+                </select>
+
+                <p>Rating</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="rating" value="5" required> 5</label>
+                    <label><input type="radio" name="rating" value="4"> 4</label>
+                    <label><input type="radio" name="rating" value="3"> 3</label>
+                    <label><input type="radio" name="rating" value="2"> 2</label>
+                    <label><input type="radio" name="rating" value="1"> 1</label>
+                </div>
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Review</button>
+            <button type="reset">Clear</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusBites | Campus Food Directory &amp; Review Portal</p>
+    </footer>
+
+</body>
+</html>
