@@ -16,12 +16,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fdf8f3;
-    color: #333333;
+    color: #513597;
     line-height: 1.6;
 }
 
 a {
-    color: #d9480f;
+    color: #513597;
 }
 
 h2 {
@@ -30,7 +30,7 @@ h2 {
 
 /* Header: logo on the left, menu on the right (Flexbox) */
 header {
-    background-color: #d9480f;
+    background-color: #513597;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@ main {
 
 .hero h1 {
     font-size: 36px;
-    color: #d9480f;
+    color: #513597;
     margin-bottom: 10px;
 }
 
@@ -85,7 +85,7 @@ main {
 /* A link styled to look like a button */
 .btn {
     display: inline-block;
-    background-color: #d9480f;
+    background-color:#513597;
     color: white;
     padding: 10px 25px;
     border-radius: 5px;
@@ -93,7 +93,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #a63a0c;
+    background-color: #513597;
 }
 
 /* Category links on the home page */
@@ -152,7 +152,7 @@ footer {
 }
 
 .stall h3 {
-    color: #d9480f;
+    color: #513597;
     margin-bottom: 5px;
 }
 
@@ -162,7 +162,7 @@ footer {
 }
 
 .rating {
-    color: #e67700;
+    color: #513597;
     font-weight: bold;
     margin: 5px 0;
 }
@@ -188,7 +188,7 @@ summary {
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
-    color: #d9480f;
+    color: #513597;
 }
 
 /* Tables (menus and compare page) */
@@ -269,7 +269,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #d9480f;
+    border-color: #513597;
 }
 
 /* Radio buttons sit side by side */
@@ -279,7 +279,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #d9480f;
+    background-color: #513597;
     color: white;
     border: none;
     padding: 10px 25px;
@@ -289,7 +289,7 @@ button {
 }
 
 button:hover {
-    background-color: #a63a0c;
+    background-color: #513597;
 }
 
 /* About page boxes */
